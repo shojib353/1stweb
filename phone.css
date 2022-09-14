@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgb(160, 67, 214);
+    text-align: center;
+    
+}
+.img > img{
+    width: 130px;
+    
+    
+
+}
+[class*="col-"]{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+h1{
+
+    text-align: center;
+    padding: 1% 7%;
+    color: rgb(231, 225, 225);
+    
+}
+
+.menu{
+    padding: 1% 7%;
+    
+    
+
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(65, 43, 124, 0.027);
+    margin: 10px;
+    border-radius: 3px;
+
+}
+.cr{
+    position: relative;
+    
+    
+    
+
+}
+.ct{
+    z-index: 3;
+    left: 42%;
+    display: none;
+    padding:10px;
+
+
+
+
+}
+
+.cr:hover .ct {
+    display: block;
+    
+}
+.ct a:hover{
+    background-color: rgba(255, 0, 0, 0.363);
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*navbar end*/
+
+.profile{
+    
+    padding: 290px;
+    position: relative;
+    text-align: center;
+    margin: 0;
+padding: 70px;
+}
+.icon1{
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    right: 60px;
+    width: 140px;
+    top:10px;
+    transition: 2s;
+}
+
+.icon2{
+    position: absolute;
+    left: 10px;
+    top: 70%;
+    transition: 2s;
+    width: 140px;
+} 
+.icon1:hover{
+    transform: rotate(360deg);
+}
+.icon2:hover{
+    transform: rotate(360deg);
+}
+.des{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.des h1{
+    color: rgb(54, 51, 51);
+    
+}
+.des p{
+    margin: 0 auto;
+    padding-top: 20px;
+    
+    max-width: 600px;
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*profile End*/
+.about-me{
+    background-color: rgb(192, 93, 162);
+    text-align: center;
+    padding: 1% 7%;
+    margin: auto;
+    
+}
+.about-me-img {
+    padding: 60px;
+}
+.about-me-img img{
+    width: 200px;
+    border: 3px white solid;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+.dotted-hr{
+    
+    
+    border: 3px dotted white;
+    width: 100px;
+    border-bottom: none;
+    margin: 0 auto;
+
+}
+.about-me-hr{
+    margin: 10px 0px;
+}
+.btn{
+    background-color: tomato;
+    padding: 10px;
+    border:transparent;
+    border-radius: 10px;
+}
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.card-icon img{
+    width: 100px;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.card-des ol li{
+    font-size: 1rem;
+    list-style: inside;
+    list-style-type: numeric;
+    
+    text-align: left;
+}
+.card {
+    text-align: center;
+    background-color: violet;
+    height: 600px;
+    padding: 10px;
+}
+.professional-experience .card:hover{
+    box-shadow: 0px 10px 9px 10px black;
+}
+.card-title h2{
+    background-color: gray;
+    padding: 10px;
+}
+ul li{
+    list-style-type: none;
+    text-align: left;
+    font-weight: bold;
+    margin: 30px 10px;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+ul li::before{
+   content: '';
+   background: lemonchiffon;
+   position: absolute;
+   top: calc(100% + 10px);
+   width: 100%;
+   height: 10px;
+   border-radius: 1000px;
+   left: 0;
+    
+}
+
+ul li::after{
+    content: '';
+    background: rgb(235, 222, 107);
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 0%;
+    height: 10px;
+    border-radius: 1000px;
+    left: 0;
+    animation-duration: 2s ;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+     
+ }
+ .html::after{
+     animation-name: html;
+ }
+ @keyframes html{
+     to{
+         width: 70%;
+     }
+ }
+ .css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 60%;
+    }
+}
+
+.java::after{
+    animation-name: java;
+}
+@keyframes java{
+    to{
+        width: 20%;
+    }
+}
+.python::after{
+   animation-name: python;
+}
+@keyframes python{
+   to{
+       width: 60%;
+   }
+}
+
+.sql::after{
+    animation-name: sql;
+}
+@keyframes sql{
+    to{
+        width: 90%;
+    }
+}
+.c::after{
+   animation-name: c;
+}
+@keyframes c{
+   to{
+       width: 50%;
+   }
+}
+
+.js::after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 70%;
+    }
+}
+.php::after{
+   animation-name: php;
+}
+@keyframes php{
+   to{
+       width: 10%;
+   }
+}
+
+professional-experience::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+
+
+
